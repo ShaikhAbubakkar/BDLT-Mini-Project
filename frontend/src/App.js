@@ -1,25 +1,18 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-// Components
-// import Navbar from './components/Navbar';
-// import Footer from './components/Footer';
-
-// Pages
-// import Home from './pages/Home';
-// import Properties from './pages/Properties';
-// import Dashboard from './pages/Dashboard';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { NavBar } from "./components";
+import { Home, BrowseLands, RegisterLand } from "./pages";
+import "./App.css";
 
 function App() {
   return (
     <Router>
-      {/* <Navbar /> */}
+      <NavBar />
       <Routes>
-        <Route path="/" element={<div>Home Page - Coming Soon</div>} />
-        <Route path="/properties" element={<div>Properties Page - Coming Soon</div>} />
-        <Route path="/dashboard" element={<div>Dashboard Page - Coming Soon</div>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/browse" element={<BrowseLands />} />
+        <Route path="/register" element={<RegisterLand />} />
       </Routes>
-      {/* <Footer /> */}
     </Router>
   );
 }

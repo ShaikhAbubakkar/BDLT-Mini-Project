@@ -1,0 +1,7 @@
+{
+  "extends": "hardhat/recommended",
+  "rules": {
+    "no-unused-vars": "warn",
+    "func-name-matching": "off"
+  }
+}
